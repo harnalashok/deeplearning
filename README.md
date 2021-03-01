@@ -1,6 +1,6 @@
 # Examples used in my DeepLearning Class
 
-**File: cats_dogs_classification.ipynb**
+**File: cats_dogs_classification.ipynb**<br>
 *Objectives:*
 
 - Building powerful image classification models using  very little data
@@ -10,34 +10,34 @@
 - Saving model-weights and model-architecture to files
 - Loading saved model-architecture and model-weights
 ------------
-**File: cifar10_classification.ipynb**
+**File: cifar10_classification.ipynb**<br>
 *Objective:*
 
 - CIFAR10 image classification using deep learning
 
 
 ------------
-**File: cifar10_classification_functionalModeling.ipynb**
+**File: cifar10_classification_functionalModeling.ipynb**<br>
 *Objective:*
 
 - CIFAR10 image classification with deep-learning CNN
 - Building Functional models  (Use GPU not CPU)
 
 ------------
-**File: classify_with_vgg16_softmax.ipynb**
+**File: classify_with_vgg16_softmax.ipynb**<br>
 *Objectives:*
 
 - Transfer Learning:     Building powerful image classification models using very little data using  pre-trained applications
 - Feature Enngineering: Using engineered features with Random Forest Classifier
 - Learning Rate Annealing: Moderating Learning rate on/near plateau 
 ------------
-**File: generators in python.ipynb**
+**File: generators in python.ipynb**<br>
 *Objectives:*
 
 - How a generator works
 - Applications of a generator
 ------------
-**File: expts_with_mobilenet.ipynb**
+**File: expts_with_mobilenet.ipynb**<br>
 *Objectives:*
 
 - Using mobilenet
@@ -45,42 +45,44 @@
 - Using Image Augmentaion techniques from libraries other than tensorflow/keras
 - Transfer learning using Mobilenet
 ------------
-**File: keras_functional.ipynb**
-* Objective:*
+**File: keras_functional.ipynb**<br>
+*Objective:*
 
- Using keras functional API
+- Using keras functional API
+
 ------------
 
-**File: image_augmentation.ipynb**
+**File: image_augmentation.ipynb**<br>
 *Objective(s):*
 
 How Image augmentation is performed.
 Image augmentation basics
 
 ------------
-**File: learningRateScheduler_tensorbard.ipyb******
+**File: learningRateScheduler_tensorbard.ipyb******<br>
 *Objectives: *
 
 - To use multiple callbacks
 - To use learning-rate scheduler
 - To see results on tensorboard
 ------------
-**File(s):
-   keras_hyperparameterOpt_class.ipynb
-   keras_hyperparameterOpt.ipynb**
+**File(s):<br>
+keras_hyperparameterOpt_class.ipynb  
+keras_hyperparameterOpt.ipynb**
+
 *Objective:*
 
 - Hyperparameter tuning example of Neural Network using keras-tuner of dense network
 
 ------------
-**File: plot_vgg16_layer_features.ipynb**
+**File: plot_vgg16_layer_features.ipynb**<br>
 *Objectives:*
 
 - Experimenting with Very Deep ConvNets: VGG16
 - Peeping into layers and plotting extracted-features
 - Visualize filters
 ------------
-**File: pretrained_layers_autoencoder_I.ipynb**
+**File: pretrained_layers_autoencoder_I.ipynb**<br>
 *Objectives*
 
 - Building autoencoder using Model class subclassing
@@ -91,7 +93,7 @@ Image augmentation basics
 
 ------------
 
-**File: pretrained_layers_autoencoder_II.ipynb**
+**File: pretrained_layers_autoencoder_II.ipynb**<br>
 *Objectives:*
 
 - Building autoencoder using Model class subclassing
@@ -102,7 +104,7 @@ Image augmentation basics
 - A pre-trained model using autoencoder-with-noise added gives better classification
 
 ------------
-**File: pretrained_layers_autoencoder_III.ipynb**
+**File: pretrained_layers_autoencoder_III.ipynb**<br>
 *Objectives*
 
 - Building autoencoder using Model class subclassing
@@ -115,14 +117,14 @@ Image augmentation basics
 
 ------------
 
-**File: subClassingKerasModel.ipynb**
+**File: subClassingKerasModel.ipynb**<br>
 *Objective:*
 
 - Subclassing keras 'Model' class to create Dynamic models
 - Two examples
 
 ------------
-**File: reusing_trained_layers.ipynb**
+**File: reusing_trained_layers.ipynb**<br>
 *Objective: *
 
 - Reuse layers from one neural network in another.
