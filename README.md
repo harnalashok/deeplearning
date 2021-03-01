@@ -1,4 +1,4 @@
-# Examples used in my DeepLearning Class
+# Examples used in my DeepLearning Classes
 
 **File: cats_dogs_classification.ipynb**<br>
 *Objectives:*
