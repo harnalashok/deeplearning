@@ -1,0 +1,11 @@
+Generative AI course at UBI
+https://colab.research.google.com/github/ageron/handson-ml2/blob/master/
+1. simpleNN_activationFunction
+2. simpleNN_churn_modeling_data.ipynb
+3. Engineering_using_keras_Functional_API.ipynb
+4. Copy_of_17_autoencoders_and_gans.ipynb
+5. anomaly_detection_using_autoencoder.ipynb
+6. KL_Divergence.ipynb
+7. tensorflow_custom_layers.ipynb
+8. 7variational_autoencoders.ipynb
+9. Variational_autoencoders_credit_card.ipynb
