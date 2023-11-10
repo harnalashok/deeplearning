@@ -3,9 +3,12 @@ https://colab.research.google.com/github/ageron/handson-ml2/blob/master/
 1. simpleNN_activationFunction
 2. simpleNN_churn_modeling_data.ipynb
 3. Engineering_using_keras_Functional_API.ipynb
-4. Copy_of_17_autoencoders_and_gans.ipynb
-5. anomaly_detection_using_autoencoder.ipynb
-6. KL_Divergence.ipynb
-7. tensorflow_custom_layers.ipynb
-8. 7variational_autoencoders.ipynb
-9. Variational_autoencoders_credit_card.ipynb
+4. autoencoders_all types.ipynb
+5. credit_card_autoencoder_modeling.ipynb
+6. anomaly_detection_using_autoencoder.ipynb
+7. KL_Divergence.ipynb
+8. tensorflow_custom_layers.ipynb
+9. variational_autoencoders_I.ipynb
+10.variational_autoencoders_credit_card.ipynb
+11.credit_card_varitional_autoencoders.ipynb
+12.simple_generative_adversarial_networks_gan.ipynb
