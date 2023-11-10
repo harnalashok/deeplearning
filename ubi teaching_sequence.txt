@@ -12,3 +12,4 @@ https://colab.research.google.com/github/ageron/handson-ml2/blob/master/
 10.variational_autoencoders_credit_card.ipynb
 11.credit_card_varitional_autoencoders.ipynb
 12.simple_generative_adversarial_networks_gan.ipynb
+13.gan_credit_card_data.ipynb
