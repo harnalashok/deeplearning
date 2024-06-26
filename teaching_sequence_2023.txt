@@ -1,0 +1,10 @@
+# LAst amended: 2nd June, 2023
+# Suggested sequence of teaching:
+
+# 1. simpleNN_singleNeuron
+# 2. simpleNN_activationFunction
+# 3. simpleNN_multiLayer
+# 4. simpleNN_dropouts
+# 5. simpleNN_batchNormalization
+# 6. simpleNN_churnprediction
+# 7. Tabular_data_with_fastai_QuickStart
