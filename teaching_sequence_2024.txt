@@ -1,0 +1,12 @@
+# LAst amended: 2nd June, 2023
+# Suggested sequence of teaching:
+
+# 1. simpleNN_singleNeuron
+# 2. simpleNN_multiLayer
+# 3. class_simpleNN_mobilePrice_data.ipynb
+
+Should know:
+	batch_normalization
+	dropouts
+
+
