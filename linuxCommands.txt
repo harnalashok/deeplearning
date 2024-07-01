@@ -1,0 +1,340 @@
+# Last amended: 24th Jan, 2022
+# My folder: /home/ashok/Documents
+
+# QUOTE:
+# "IN LINUX WORLD WITHOUT KNOWING LINUX COMMNANDS ONE IS CRIPPLED"
+
+# Ref: 
+#     1. https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
+#     2. http://linuxcommand.org/tlcl.php
+
+
+# Open terminal and enter the following commands, one by one
+# Sentence-case of commands is important. All commands are 
+# to be issued in lowercase.
+
+
+
+### AA. Directory related
+
+#1) Where are we? Print Working Directory:
+
+	pwd
+
+
+#2) Change directory to Documents.
+#   Syntax: 
+#        cd <fullPathToFile>
+
+
+	cd /home/ashok/Documents
+
+
+#3) Change directory to 'root' folder:
+
+	cd /
+
+
+#4) HOME folder: Take me back to my HOME directory
+
+
+	cd ~
+	cd $HOME
+	cd 
+
+
+#5) Make directory, dir1, dir2, dir3, dir4 
+#   under Downloads folder:
+
+	cd /home/ashok/Downloads
+	mkdir dir1
+	mkdir dir2 dir 3 dir4
+
+
+#6) Make directories dirx/diry/dirz
+#   under Downloads folder:
+
+
+	cd ~/Downloads
+	mkdir -p dirx/diry/dirz
+
+	cd dirx/diry/dirz
+
+
+#7)  Move one level up or higher folder from my current folder:
+#    Assuming you are in Documents folder, the following command
+#    takes you to HOME folder:
+
+	cd ..
+
+
+### BB. List files
+
+
+#8) List all files and folders under the current folder:
+
+	ls
+
+
+#9) List all files and folders and their sizes:
+#   We use 'flag(s)' to modify the behaviour of command:
+
+	ls -l
+
+
+
+#9a) A folder must have execute permission. Try to change
+#    permissions for books folder:
+
+
+
+cd
+cd /home/ashok/Documents
+ls -l
+chmod -x books
+ls -l
+# Now try to open books folder:
+cd books
+# Change permissions again:
+chmod +x books
+cd books
+
+
+
+#10) How is the following command different from above?
+
+	ls -l -a
+
+	OR
+
+	ls -la
+
+
+#11) Show me hidden files and folders under the current folder:
+
+	Files and folders that have a dot (.) before their names
+
+
+### CC. Copy/Rename/Move
+
+
+#12) Copy linuxCommands.txt to Downloads folder 
+#    as 'xyz.txt' and as 'lc.txt':
+
+
+	cp ~/Documents/linuxCommands.txt  ~/Downloads/xyz.txt
+        cp ~/Documents/linuxCommands.txt  ~/Downloads/lc.txt
+
+
+#    Check:
+
+	ls ~/Downloads
+
+
+#13) Make a copy of complete folder. Copy folder
+#    /cdata/adult  to folder /home/ashok/Downloads/abc
+#    Use recursive copying:  cp -r
+
+	cp -r  /cdata/adult  ~/Downloads/abc
+
+
+
+#14) Rename a file:
+#	Move file in the same folder with a difft name:
+
+	cd ~/Downloads
+	mv xyz.txt  xyz1.txt
+
+#	Check
+
+	ls
+
+
+#15) Move a file to another folder:
+
+	cd ~/Downloads
+	pwd
+	mv xyz1.txt ~/Downloads/dirx/diry/dirz
+
+
+#	Check, if file has moved?
+
+	ls ~/Downloads/dirx/diry/dirz
+
+
+
+### DD. File/folder deletion
+
+
+#20) Delete file lc.txt in Downloads folder:
+
+
+	cd ~/Downloads
+	rm lc.txt
+
+
+# Check 
+	ls ~/Downloads
+
+
+
+# 	Delete folder dirz
+
+	cd ~/Downloads/dirx/diry
+	rm  dirz
+
+	rm -r -f dirz			
+
+
+### EE. Print Message/Print File
+
+
+#21) Print a message on the screen using
+#    echo command:
+
+
+	echo "This is my message"
+	echo "This is another message"
+
+
+
+#22) Show contents of file 'advertising.csv in folder: 
+#    Downloads/abc/adult.data
+
+	cat ~/Downloads/abc/adult.data
+
+
+#23) Show first ten lines of above file:
+
+	head ~/Downloads/abc/adult.data
+	head ~/Downloads/abc/adult.data  
+
+#24) Show last ten lines of adult.data
+
+	tail ~/Downloads/abc/adult.data
+
+
+### FF. Redirection
+
+#25) Some commands create outputs (ls) on screen and some 
+#    commands do not (such as, mkdir). Normally a command
+#    would send its output to screen.
+#    You can think of 'screen' or your 'monitor' as a file. 
+#    Besides screen (or monitor)You can redirect output to
+#    a file using redirection symbol (>):
+
+	cd /home/ashok/Downloads
+	ls > output.txt
+	ls > output.txt
+	ls -la >> output.txt
+
+#26) What is the difference between > and >>  
+#    >> appends to existing file while > always
+#    creates a new file, deleting an earlier file
+
+
+#27) Write the following two lines to a file:
+
+	Linux is a good software
+	It is very robust
+
+	cd ~/Downloads
+	echo "Linux is a good software"  > myfile.txt
+	echo "It is very robust"        >> myfile.txt
+
+#	Check if written using 'cat' command?
+
+	cat myfile.txt
+
+
+#28) Print the output of a text file:
+
+	cat myfile.txt
+
+
+#29) You can redirect output of cat command
+#    to another file or back to itself:
+
+
+	cat myfile.txt >> myfile.txt
+
+  
+
+
+#30) Create a blank file that is file of 0 byte:
+
+	cd ~/Downloads
+	touch ftx
+
+	# Check just created file size:
+
+	ls -l -a 
+
+
+### GG. Piping
+###     https://www.redhat.com/sysadmin/pipes-command-line-linux
+
+
+#31)  Plumbing with commands. Piping
+#     Ref: https://ubuntu.com/tutorials/command-line-for-beginners#6-a-bit-of-plumbing
+#     Count number of lines in file linuxCommands.txt:
+
+	wc -l /home/ashok/Downloads/linuxCommands.txt
+
+#32) How many files or folders exist in my current folder:
+
+	ls -a | wc -l
+
+#33)    Another command with plumbing. Filter through pages, one screenful at a time:
+
+	ls /etc | more	
+
+
+#34) Change file access premissions (chmod) on file
+		
+		ls -la /home/ashok/Documents/a.zip
+		chmod 777 /home/ashok/Documents/a.zip
+		ls -la /home/ashok/Documents/a.zip
+
+
+#35) Create a normal user:
+
+	sudo adduser vivek
+
+
+#35)   Superuser
+#	create a user
+#        Software installation
+
+
+
+#36) ToDO
+#	Unzip .tar.gz file
+
+##############################
+# What is a Linux kernel?
+# Ref: https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
+##############################
+
+The Linux kernel is the main component of
+a Linux operating system (OS) and is the
+core interface between a computer’s hardware
+and its processes. It communicates between 
+the 2, managing resources as efficiently as
+possible.
+
+The kernel is so named because—like a seed 
+inside a hard shell—it exists within the OS
+and controls all the major functions of the
+hardware, whether it’s a phone, laptop, server,
+or any other kind of computer.
+
+Think about it like this: The kernel is a busy
+personal assistant for a powerful executive
+(the hardware). It’s the assistant’s job to 
+relay messages and requests (processes) from
+employees and the public (users) to the 
+executive, to remember what is stored where 
+(memory), and to determine who has access to
+the executive at any given time and for how long.
+
